@@ -15,6 +15,25 @@ usuario4 = Persona(una_profesion="profesor",un_nombre="Brian")
 usuario100 = Persona(una_profesion="programadora",un_nombre="Lore")
 usuario421 = Persona(un_nombre="Willy", una_edad="21", una_profesion="estudiante")
 
+
+
 #para acceder a los atributos o caracteristicas, coloco en la terminal 
 #el nombre del objeto, en este caso usuario1 y luego .(elnombredelacaracteristicaquequierosaber)
 #ejemplo usuario1.edad
+
+
+class Persona:
+    def __int__(self, un_nombre,una_edad,una_profesion):
+        self.nombre = una_edad
+        self.edad = una_edad
+        self.profesion = una_profesion
+
+    def cumpleanhos (self):
+        self.edad = self.edad + 1
+        return self.edad
+
+guillermo = Persona ("Guillermo", 27, "Programador")
+print(guillermo.edad)
+guillermo.cumpleanhos()
+print(guillermo.nombre)
+print(guillermo.edad)
